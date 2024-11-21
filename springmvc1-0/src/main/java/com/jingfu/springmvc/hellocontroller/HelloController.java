@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class HelloController {
 
-    @RequestMapping(value = "/hello",method = RequestMethod.GET,
-            produces = "text/html;charset=utf-8")
+    @RequestMapping(value = "/hello",method = RequestMethod.GET, produces = "text/html;charset=utf-8")
+    //指定了响应的媒体类型为 text/html，并且指定了字符集为 UTF-8。
     @ResponseBody
     public String Hello() {
         System.out.println("Hello SpringMvc");//返回控制台

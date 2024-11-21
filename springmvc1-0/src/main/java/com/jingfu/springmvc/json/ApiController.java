@@ -5,10 +5,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.sql.SQLOutput;
+
 @Controller
 @RequestMapping("/api")
 @ResponseBody
 public class ApiController {
+
+    @GetMapping("/api")
+    @ResponseBody
+    public String handleGet2() {
+        return "getResponse2";
+    }
 
     @PostMapping("/data")
     @ResponseBody
