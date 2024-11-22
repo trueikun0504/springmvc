@@ -3,6 +3,7 @@ package com.jingfu.springmvc.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scripting.support.StaticScriptSource;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
@@ -11,15 +12,16 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 @ComponentScan({"com.jingfu.springmvc.hellocontroller","com.jingfu.springmvc.json"
 ,"com.jingfu.springmvc.param","com.jingfu.springmvc.pathcontroller"})
 @EnableWebMvc
-public class MvcConfig {
-sout
+public class MvcConfigq {
+//你好
+
     @Bean
     public RequestMappingHandlerMapping handlerMapping() {
         return new RequestMappingHandlerMapping();
     }
     @Bean
     public RequestMappingHandlerAdapter handlerAdapter() {
-        return new RequestMappingHandlerAdapter();
+        return new RequestMappingHandlerAdapter();222
     }
 
 }
