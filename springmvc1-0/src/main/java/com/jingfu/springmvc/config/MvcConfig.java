@@ -13,7 +13,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 ,"com.jingfu.springmvc.param","com.jingfu.springmvc.pathcontroller"})
 @EnableWebMvc
 public class MvcConfigq {
-//你好
+//你好呀
 
     @Bean
     public RequestMappingHandlerMapping handlerMapping() {
